@@ -127,10 +127,13 @@ header {
   width: fit-content;
   height: auto;
   padding: 1rem 2rem;
-  background-color: #8B48BF;
+  background-color: rgba(139 72 191 / 1);
   color: #FFF;
   border-radius: 2rem;
+  transition: background-color .3s ease-in-out;
 }
+
+.button:hover{ background-color: rgba(139 72 191 / .7); }
 
 /* ===== Mediaqueries para Responsive Web Design ===== */
 
