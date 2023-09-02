@@ -51,8 +51,8 @@ Variante gris claro: rgb (249, 249, 249)
 .item {
   flex-basis: 100%;
   width: 100%;
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
 }
 
 .xs-row-align-center { align-items: center; }
@@ -62,7 +62,7 @@ Variante gris claro: rgb (249, 249, 249)
   width: 50%;
 }
 
-/* Estilos para el header y el menu de navegación */
+/* ===== Estilos para el header y el menu de navegación ===== */
 header {
   position: fixed;
   width: 100%;
@@ -70,11 +70,12 @@ header {
   height: fit-content;
   background-color: #FFF;
   box-shadow: 1px 1px 1px rgba(30 30 30 / .2);
+  z-index: 77777;
 }
 
 .main-nav {
   margin-top: 1.6rem;
-  padding: 1rem 2rem;
+  padding: 1rem 0;
 }
 
 .logo-nav {
@@ -91,6 +92,44 @@ header {
   font-size: 2.6rem;
   display: flex;
   justify-content: flex-end;
+}
+/* ===== FIN Estilos para el header y el menu de navegación ===== */
+
+
+/* ===== Estilos para la sección principal ===== */
+.intro {
+  position: relative;
+  width: 100%;
+  padding-top: 8rem;
+  margin-bottom: 2.5rem;
+}
+
+.intro-content {
+  text-align: right;
+}
+
+.intro-image { margin-bottom: 6rem; }
+
+.intro-title {
+  font-size: 3rem;
+  font-weight: 700;
+  color: #232c50;
+}
+
+.intro-title, .intro-info { margin-bottom: 1.75rem; }
+
+/* ===== FIN Estilos para la sección principal ===== */
+
+
+/* Estilos generales para elementos comunes */
+.button {
+  display: inline-block;
+  width: fit-content;
+  height: auto;
+  padding: 1rem 2rem;
+  background-color: #8B48BF;
+  color: #FFF;
+  border-radius: 2rem;
 }
 
 /* ===== Mediaqueries para Responsive Web Design ===== */
