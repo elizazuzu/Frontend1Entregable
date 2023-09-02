@@ -1,3 +1,6 @@
+/* Importación dela fuente requerida */
+@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&display=swap');
+
 /* Reseteos básicos iniciales */
 *,
 *::after,
@@ -33,3 +36,24 @@ Variante gris claro: rgb (249, 249, 249)
 /* ===== TIPOGRAFÍA ===== */
 /* - Family: [Be Vietnam Pro](https://fonts.google.com/specimen/Be+Vietnam+Pro)
 - Weights: 400, 500, 700 */
+
+/* Estilos de contenedores y elementos flexbox para el layout */
+.row {
+  max-width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.item {
+  flex-basis: 100%;
+  width: 100%;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* ===== Mediaqueries para Responsive Web Design ===== */
+
+@media screen and (min-width: 1440px) { /* Desktop con 1440px o más */
+  
+}
