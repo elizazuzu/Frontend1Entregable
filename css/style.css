@@ -124,6 +124,7 @@ header {
 
 
 /* ===== Estilos para la segunda sección ===== */
+
 .difference {
   position: relative;
   width: 100%;
@@ -139,6 +140,20 @@ header {
   font-weight: 700;
   margin-bottom: 3rem;
 }
+
+.difference h2 {
+  font-size: 36px;
+  font-weight: bold;
+  width: 300px;
+  margin-bottom: 70px;
+}
+
+.difference p {
+  line-height: 28px;
+  word-spacing: 2px;
+  width: 450px;
+}
+
 
 .practices {
   position: relative;
