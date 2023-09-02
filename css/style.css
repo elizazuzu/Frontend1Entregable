@@ -189,6 +189,120 @@ header {
 
 
 /* Estilos generales para elementos comunes */
+.buttonmore {
+  display: flex;
+  justify-content: center;
+}
+
+.more {
+  background-color: #8b48bf;
+  border: none;
+  border-radius: 50px;
+  padding: 15px 50px;
+  cursor: pointer;
+  color: #ffffff;
+  width: 134px;
+  height: 44px;
+  margin-top: 3rem;
+}
+
+.centered-section {
+  display: flex;
+  flex-direction: column; /* Alinea los elementos verticalmente */
+  justify-content: center; /* Centra verticalmente */
+  align-items: center; /* Centra horizontalmente */
+  height: 100vh; /* Esto centra la sección en toda la altura de la ventana */
+}
+
+/* Estilos adicionales según sea necesario */
+.get-to {
+  text-align: center; /* Para centrar el texto dentro del div */
+}
+
+
+.centered-section {
+  background-color: #3cddf3;
+  margin-top: 4rem;
+  width: 540px;
+  height: 400px;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+}
+
+.get-to {
+  width: 350px;
+  align-self: center;
+  margin-top: 4rem;
+}
+
+.get-to {
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+.gobutton {
+  background-color: #232c50;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  color: #ffffff;
+  width: 134px;
+  height: 44px;
+  margin-top: 3rem;
+  align-self: center;
+}
+
+.pie {
+  display: flex;
+  flex-direction: column-reverse;
+}
+footer {
+  height: 534.71px;
+  background-color: #1e1e26;
+  color: #ffffff;
+  padding-top: 4rem;
+}
+.redes {
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 3rem;
+  font-size: 20px;
+}
+.items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.itemss {
+  list-style: none;
+}
+
+.itemss li a {
+  text-decoration: none;
+  color: #ffffff;
+  margin-bottom: 1.2rem;
+  display: block;
+}
+.go {
+  height: 42px;
+  width: 63px;
+  border-radius: 1.3rem;
+  background-color: #8b48bf;
+  margin-top: 2px;
+  cursor: pointer;
+  border: none;
+  margin-left: 0.6rem;
+}
+.copyright {
+  color: #8c8c94;
+  display: flex;
+  justify-content: center;
+  font-size: 13px;
+}
 .button {
   display: inline-block;
   width: fit-content;
