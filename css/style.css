@@ -1,0 +1,35 @@
+/* Reseteos básicos iniciales */
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  font-family: "Be Vietnam Pro";
+  font-weight: 500;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ol, ul { list-style: none; }
+
+a { text-decoration: none; }
+
+/* ===== COLORES ===== */
+/* Violeta: #8B48BF
+Celeste brillante: #3CDDF3
+Azul grisáceo oscuro: #1E1E26
+Azul muy oscuro: #232851
+Variante gris claro: rgb (249, 249, 249)
+
+/* ===== TIPOGRAFÍA ===== */
+/* - Family: [Be Vietnam Pro](https://fonts.google.com/specimen/Be+Vietnam+Pro)
+- Weights: 400, 500, 700 */
