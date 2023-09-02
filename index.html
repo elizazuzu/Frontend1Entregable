@@ -15,19 +15,34 @@
     <!-- Header principal -->
     <header>
         <!-- Menu de navegación principal -->
-        <nav>
-            <img src="./images/logo.svg" alt="Logo brand">
-            <ul>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">Products</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#"> Trainning</a></li>
-                <li><a href="#">Community</a></li>
-            </ul>
-            <a href="#">Contact</a>
+        <nav class="main-nav">
+            <div class="row">
+                <!-- Logo -->
+                <div class="item xs-cols-6 logo-nav">
+                    <img src="./images/logo.svg" alt="Logo brand">
+                </div>
 
-            <!-- Menu "hamburguesa" versión mobile -->
-            <span>Bars</span>
+                <!-- Navegación -->
+                <div class="row row-full menu-nav show-from-lg">
+                    <div class="item">
+                        <ul>
+                            <li><a href="#">Sports</a></li>
+                            <li><a href="#">Products</a></li>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#"> Trainning</a></li>
+                            <li><a href="#">Community</a></li>
+                        </ul>
+                    </div>
+                    <div class="item">
+                        <a href="#">Contact</a>
+                    </div>
+                </div>
+    
+                <!-- Menu "hamburguesa" versión mobile -->
+                <div class="item xs-cols-6 hamburger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+            </div>
         </nav>
     </header>
     <main>
