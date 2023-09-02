@@ -68,6 +68,8 @@ header {
   width: 100%;
   min-height: 100px;
   height: fit-content;
+  background-color: #FFF;
+  box-shadow: 1px 1px 1px rgba(30 30 30 / .2);
 }
 
 .main-nav {
