@@ -144,14 +144,12 @@ header {
 .difference h2 {
   font-size: 36px;
   font-weight: bold;
-  width: 300px;
   margin-bottom: 70px;
 }
 
 .difference p {
   line-height: 28px;
   word-spacing: 2px;
-  width: 450px;
 }
 
 
@@ -242,6 +240,10 @@ header {
   font-size: 1rem;
   color: #B9B9C1;
 }
+
+.hide-to-lg{
+  display: none;
+}
 /* ===== FIN Estilos para la tercera sección ===== */
 
 
@@ -299,18 +301,26 @@ header {
   padding: 3rem 0;
 }
 
+.footer-nav{
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+.footer-logo{
+  text-align: center;
+  margin-bottom: 2.25rem;
+}
 .redes {
   display: flex;
-  justify-content: space-evenly;
-  margin-bottom: 3rem;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
   font-size: 20px;
 }
 .items {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+  
 }
 
 .itemss li a {
@@ -357,7 +367,6 @@ header {
   margin-left: 1rem;
 }
 
-
 .button {
   display: inline-block;
   width: fit-content;
@@ -375,5 +384,7 @@ header {
 /* ===== Mediaqueries para Responsive Web Design ===== */
 
 @media screen and (min-width: 1440px) { /* Desktop con 1440px o más */
-  
+  .hide-to-lg{
+    display:block;
+  }
 }
