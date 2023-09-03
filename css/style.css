@@ -136,14 +136,8 @@ header {
 }
 
 .difference-title {
-  font-size: 2.25rem;
-  font-weight: 700;
-  margin-bottom: 3rem;
-}
-
-.difference h2 {
   font-size: 36px;
-  font-weight: bold;
+  font-weight: 700;
   margin-bottom: 70px;
 }
 
@@ -166,6 +160,7 @@ header {
 }
 
 .practices-title {
+  position: relative;
   width: 100%;
   height: 2.75rem;
   background-color: rgba(139 72 191 / .3);
@@ -386,5 +381,83 @@ header {
 @media screen and (min-width: 1440px) { /* Desktop con 1440px o más */
   .hide-to-lg{
     display:block;
+  }
+  .lg-cols-4{
+    max-width: 33.3333%;
+    flex-basis: 33.3333%;
+  }
+  .lg-cols-6{
+    max-width: 50%;
+    flex-basis: 50%;
+  }
+  .lg-align-center{
+    align-items: center;
+  }
+  .lg-justify-center{
+    justify-content: center;
+  }
+  .intro-image {
+    margin-bottom: 0;
+  }
+  .difference{
+    background-color: #8b48bf;
+  }
+  .difference-title {
+    margin-bottom: 0;
+  }
+  .practices-title{
+    background-color: transparent;
+  }
+  .practices-title::before{
+    position: absolute;
+    left: -16%;
+  }
+  .practices{
+    margin-bottom: 3rem;
+  }
+  .centered-section{
+    background-color: #8b48bf;
+  }
+  .show-to-lg{
+    display: none;
+  }
+  .get-to{
+    margin-bottom: 0;
+    text-align: left;
+  }
+  .gobutton{
+    background-color: white;
+    color: #8b48bf;
+  }
+  .lg-order-negative{
+    order: -1;
+  }
+  .lg-order-positive{
+    order: 1;
+  }
+  .social{
+    display:flex;
+    flex-direction: column-reverse;
+    align-items: flex-start;
+  }
+  .footer-logo{
+    margin-bottom: 5.3rem;
+  }
+  .footer-nav{
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  .redes{
+    justify-content: center;
+    column-gap: 13px;
+  }
+  .copyright{
+    justify-content: flex-end;
+  }
+  .items{
+    justify-content: space-between;
+  }
+  .to-right{
+    text-align: right;
   }
 }
