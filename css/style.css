@@ -89,6 +89,10 @@ header {
   display: none;
   opacity: 0;
 }
+.hamburger-delet{
+  display: block;
+  opacity: 1;  
+}
 
 .hamburger {
   font-size: 2.6rem;
@@ -143,7 +147,7 @@ header {
 
 .difference p {
   line-height: 28px;
-  word-spacing: 2px;
+
 }
 
 
@@ -460,4 +464,39 @@ header {
   .to-right{
     text-align: right;
   }
+  .menu-nav {
+    display: block;
+    opacity: 1;
+  }
+  .hamburger-delet{
+    display: none;
+    opacity: 0;  
+  }
+  .menu-nav {
+    list-style: none; /* Elimina los puntos de lista */
+    padding: 0;
+    margin: 0;
+}
+
+.menu-list{
+  display:flex;
+  justify-content: center;
+  column-gap: 28px;
+}
+.menu-nav ul li a {
+    color:#242E53 
+}
+.menu-nav ul li a:hover{
+     color: #242E53;
+     opacity: 60%;
+}
+.lg-cols-2{
+  flex-basis: 16.6666%;
+  max-width: 16.6666%;
+}
+.lg-cols-8{
+  flex-basis: 66.6666%;
+  max-width: 66.6666%;
+}
+
 }
