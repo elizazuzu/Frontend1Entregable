@@ -89,6 +89,10 @@ header {
   display: none;
   opacity: 0;
 }
+.hamburger-delet{
+  display: block;
+  opacity: 1;  
+}
 
 .hamburger {
   font-size: 2.6rem;
@@ -460,4 +464,23 @@ header {
   .to-right{
     text-align: right;
   }
+  .menu-nav {
+    display: block;
+    opacity: 1;
+  }
+  .hamburger-delet{
+    display: none;
+    opacity: 0;  
+  }
+  .menu-nav {
+    list-style: none; /* Elimina los puntos de lista */
+    padding: 0;
+    margin: 0;
+}
+
+  .menu-nav ul li {
+    display: inline; /* Muestra los elementos de la lista en línea */
+    margin-right: 25px; 
+}
+
 }
