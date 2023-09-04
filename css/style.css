@@ -284,9 +284,9 @@ header {
 
 .footer-nav{ margin: 3rem 0; }
 
-.footer-logo{
-  text-align: center;
+.social {
   margin-bottom: 2.25rem;
+  text-align: center;
 }
 
 .redes {
