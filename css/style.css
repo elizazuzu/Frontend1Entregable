@@ -64,6 +64,8 @@ Variante gris claro: rgb (249, 249, 249)
   width: 50%;
 }
 
+.hide-to-lg{ display: none; }
+
 /* ===== Estilos para el header y el menu de navegación ===== */
 header {
   position: fixed;
@@ -75,10 +77,7 @@ header {
   z-index: 77777;
 }
 
-.main-nav {
-  margin-top: 1.6rem;
-  padding: 1rem 0;
-}
+.main-nav { padding: 2rem 0; }
 
 .logo-nav {
   display: flex;
@@ -89,7 +88,8 @@ header {
   display: none;
   opacity: 0;
 }
-.hamburger-delet{
+
+.hamburger-delete{
   display: block;
   opacity: 1;  
 }
@@ -145,10 +145,7 @@ header {
   margin-bottom: 70px;
 }
 
-.difference p {
-  line-height: 28px;
-
-}
+.difference p { line-height: 28px; }
 
 
 .practices {
@@ -165,12 +162,11 @@ header {
 
 .practices-title {
   position: relative;
-  width: 100%;
+  width: 100vh;
   height: 2.75rem;
   background-color: rgba(139 72 191 / .3);
   font-weight: 700;
   color: #323851;
-  margin-left: 2rem;
   border-top-left-radius: 1.75rem;
   border-bottom-left-radius: 1.75rem;
   display: flex;
@@ -217,6 +213,7 @@ header {
   background-color: #FAFAFA;
   /* background-color: aquamarine; */
   margin-top: 4rem;
+  margin-bottom: 2rem;
   padding: 2rem 0;
   text-align: center;
 }
@@ -238,31 +235,16 @@ header {
 .best-card__info {
   font-size: 1rem;
   color: #B9B9C1;
-}
-
-.hide-to-lg{
-  display: none;
+  padding: 0 1rem;
 }
 /* ===== FIN Estilos para la tercera sección ===== */
 
 
 
 /* Estilos generales para elementos comunes */
-.buttonmore {
+.best-cta {
   display: flex;
   justify-content: center;
-}
-
-.more {
-  background-color: #8b48bf;
-  border: none;
-  border-radius: 50px;
-  padding: 15px 50px;
-  cursor: pointer;
-  color: #ffffff;
-  width: 134px;
-  height: 44px;
-  margin-top: 3rem;
 }
 
 /* Estilos adicionales según sea necesario */
@@ -300,26 +282,23 @@ header {
   padding: 3rem 0;
 }
 
-.footer-nav{
-  margin-top: 2rem;
-  margin-bottom: 3rem;
+.footer-nav{ margin: 3rem 0; }
+
+.social {
+  margin-bottom: 2.25rem;
+  text-align: center;
 }
 
-.footer-logo{
-  text-align: center;
-  margin-bottom: 2.25rem;
-}
 .redes {
   display: flex;
   justify-content: space-between;
   margin-bottom: 1.5rem;
   font-size: 20px;
 }
+
 .items {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  
+  justify-content: space-around;
 }
 
 .itemss li a {
@@ -383,120 +362,119 @@ header {
 /* ===== Mediaqueries para Responsive Web Design ===== */
 
 @media screen and (min-width: 1440px) { /* Desktop con 1440px o más */
-  .hide-to-lg{
-    display:block;
+  .lg-cols-2{
+    flex-basis: 16.6666%;
+    max-width: 16.6666%;
   }
+
   .lg-cols-4{
     max-width: 33.3333%;
     flex-basis: 33.3333%;
   }
+
   .lg-cols-6{
     max-width: 50%;
     flex-basis: 50%;
   }
-  .lg-align-center{
+
+  .lg-cols-8{
+    flex-basis: 66.6666%;
+    max-width: 66.6666%;
+  }
+
+  .hide-to-lg{ display:block; }
+
+  .show-to-lg { display: none; }
+
+  .lg-align-center{ align-items: center; }
+
+  .lg-justify-center{ justify-content: center; }
+  
+  .lg-order-negative{ order: -1; }
+
+  .lg-order-positive{ order: 1; }
+
+  header { height: 10rem; }
+
+  .main-nav {
+    height: inherit;
+    margin: 0;
+    padding: 0;
+    display: flex;
     align-items: center;
   }
-  .lg-justify-center{
+
+  .menu-nav {
+    display: block;
+    opacity: 1;
+  }
+
+  .hamburger-delete{
+    display: none;
+    opacity: 0;  
+  }
+
+  .menu-list{
+    display:flex;
     justify-content: center;
+    column-gap: 28px;
   }
-  .intro-image {
-    margin-bottom: 0;
+
+  .menu-nav ul li a { color:#242E53 }
+
+  .menu-nav ul li a:hover{
+     color: #242E53;
+     opacity: 60%;
   }
-  .difference{
-    background-color: #8b48bf;
-  }
-  .difference-title {
-    margin-bottom: 0;
-  }
+
+  .intro-image, .difference-title { margin-bottom: 0; }
+
+  .difference{ background-color: #8b48bf; }
+
   .practices-title{
+    width: auto;
     background-color: transparent;
   }
+
   .practices-title::before{
     position: absolute;
-    left: -16%;
+    left: -5rem;
   }
-  .practices{
-    margin-bottom: 3rem;
-  }
-  .centered-section{
-    background-color: #8b48bf;
-  }
-  .show-to-lg{
-    display: none;
-  }
+  .practices{ margin-bottom: 3rem; }
+
+  .centered-section{ background-color: #8b48bf; }
+
   .get-to{
     margin-bottom: 0;
     text-align: left;
   }
+
   .gobutton{
     background-color: white;
     color: #8b48bf;
   }
-  .lg-order-negative{
-    order: -1;
-  }
-  .lg-order-positive{
-    order: 1;
-  }
+
   .social{
     display:flex;
     flex-direction: column-reverse;
     align-items: flex-start;
   }
-  .footer-logo{
-    margin-bottom: 5.3rem;
-  }
+
+  .footer-logo{ margin-bottom: 5.3rem; }
+
   .footer-nav{
     margin-top: 0;
     margin-bottom: 0;
   }
+
   .redes{
     justify-content: center;
     column-gap: 13px;
   }
-  .copyright{
-    justify-content: flex-end;
-  }
-  .items{
-    justify-content: space-between;
-  }
-  .to-right{
-    text-align: right;
-  }
-  .menu-nav {
-    display: block;
-    opacity: 1;
-  }
-  .hamburger-delet{
-    display: none;
-    opacity: 0;  
-  }
-  .menu-nav {
-    list-style: none; /* Elimina los puntos de lista */
-    padding: 0;
-    margin: 0;
-}
 
-.menu-list{
-  display:flex;
-  justify-content: center;
-  column-gap: 28px;
-}
-.menu-nav ul li a {
-    color:#242E53 
-}
-.menu-nav ul li a:hover{
-     color: #242E53;
-     opacity: 60%;
-}
-.lg-cols-2{
-  flex-basis: 16.6666%;
-  max-width: 16.6666%;
-}
-.lg-cols-8{
-  flex-basis: 66.6666%;
-  max-width: 66.6666%;
-}
+  .copyright{ justify-content: flex-end; }
+  
+  .items{ justify-content: space-between; }
 
+  .to-right{ text-align: right; }
 }
