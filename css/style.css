@@ -118,6 +118,11 @@ header {
 
 .intro-image { margin-bottom: 6rem; }
 
+.intro-image img {
+  display: block;
+  margin: 0 auto;
+}
+
 .intro-title {
   font-size: 3rem;
   font-weight: 700;
