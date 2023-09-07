@@ -65,12 +65,11 @@ Variante gris claro: rgb (249, 249, 249)
   }
 }
 
-.intro {
-  
-  animation: escalaYDesvanecimiento 8s ease-in-out infinite;
+.logo:hover {
+    animation: escalaYDesvanecimiento 5s linear infinite; /* La animación se repite infinitamente al hacer hover */
 }
 
-.item {
+.items {
   flex-basis: 100%;
   width: 100%;
   padding-left: 2rem;
