@@ -69,7 +69,8 @@ Variante gris claro: rgb (249, 249, 249)
     animation: escalaYDesvanecimiento 5s linear infinite; /* La animación se repite infinitamente al hacer hover */
 }
 
-.items {
+
+.item {
   flex-basis: 100%;
   width: 100%;
   padding-left: 2rem;
